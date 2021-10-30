@@ -1,0 +1,49 @@
+[
+    {
+        "id": "0",
+        "Category": "Made in America: Travel's Essential Contribution to Economic Development",
+        "name": "The global travel marketplace is highly lucrative, and it is more important now than ever before that we keep American destinations top of mind for travelers, both in the U.S. and abroad.",
+
+        "img": "https://i.ibb.co/4fRfjQp/images.jpg",
+        "price":"4044"
+    },
+    {
+        "id": "1",
+        "Category": "Fact Sheet: Travel Creates Jobs",
+        "name": "The first page focuses on travel's general contribution to job creation, while the second pages highlights the specific contribution of international inbound travel to the creation of American jobs and its positive effect on the U.S. trade balance.",
+        "img": "https://i.ibb.co/ySp2Cnr/download-7.jpg",
+        "price":"4424"
+
+    },
+    {
+        "id": "2",
+        "Category": "Travel Forecast",
+        "name": "Driven by U.S. Travel Association and Oxford Economic's proprietary travel forecasting model, the semi-annual domestic and international forecast.",
+        "img": "https://i.ibb.co/k6pTy7X/download-6.jpg",
+        "price":"9044"
+
+    },
+    {
+        "id": "3",
+        "Category": "Fact Sheet: Travel Creates Jobs",
+        "name": "the American economy, providing an indispensable source of job creation. The travel industry is unique: it is highly dependent on human labor",
+        "img": "https://i.ibb.co/6Rw5j3s/download-5.jpg",
+        "price":"1044"
+
+    },
+    {
+        "id": "4",
+        "Category": "we keep American destinations",
+        "name": "Travel is essential to the American economy, providing an indispensable source of job creation. The travel industry is unique: it is highly dependent on human labor, generally immune to outsourcing and plays a key role in international trade.",
+        "img": "https://i.ibb.co/GtXwSvd/download-4.jpg",
+        "price":"6144"
+    },
+    {
+        "id": "5",
+        "Category": "Travel is essential to the American economy,",
+        "name": "he global travel marketplace is highly lucrative, and it is more important now than ever before that we keep American destinations top of mind for travelers, both in the U.S. and abroad.",
+        "img": "https://i.ibb.co/tLCYLPG/download-3.jpg",
+        "price":"8044"
+    }
+]
+
