@@ -5,12 +5,12 @@ const Travels = () => {
     const [users, setUser] = useState([])
     const [isdeleted,setDeleted]=useState(null)
     useEffect(() => {
-        fetch('http://localhost:5000/traveldata')
+        fetch('https://stormy-coast-94004.herokuapp.com/traveldata')
             .then(res => res.json())
             .then(data => setUser(data))
     }, [isdeleted])
     const handleDelet = (id) => {
-        fetch(`http://localhost:5000/productD/${id}`, {
+        fetch(`https://stormy-coast-94004.herokuapp.com/productD/${id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'

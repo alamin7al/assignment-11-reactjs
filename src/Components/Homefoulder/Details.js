@@ -11,12 +11,12 @@ const Details = () => {
     const { users } = Useauth();
     const { register, handleSubmit, formState: { errors } } = useForm();
     useEffect(() => {
-        fetch(`http://localhost:5000/single/${id}`)
+        fetch(`https://stormy-coast-94004.herokuapp.com/single/${id}`)
             .then(res => res.json())
             .then(data => setTravel(data))
     }, [])
     const onSubmit = data => {
-        fetch('http://localhost:5000/traveldata', {
+        fetch('https://stormy-coast-94004.herokuapp.com/traveldata', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

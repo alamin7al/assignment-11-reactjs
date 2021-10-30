@@ -17,7 +17,7 @@ import Travels from './Components/Travel/Travels';
 import MYorder from './Components/Homefoulder/MYorder';
 import Addevents from './Components/Homefoulder/Addevents';
 import Footer from './Components/Homefoulder/Footer';
-import Detailstc from './Components/Homefoulder/Detailstc';
+// import Detailstc from './Components/Homefoulder/Detailstc';
 // import Carousal from './Components/Homefoulder/Carousal';
 const App = () => {
   return (

@@ -10,7 +10,7 @@ const MYorder = () => {
     const [travel, settravels] = useState([])
   
     useEffect(() => {
-        fetch(`http://localhost:5000/traveldata`)
+        fetch(`https://stormy-coast-94004.herokuapp.com/traveldata`)
             .then(res => res.json())
             .then(data => settravels(data))
     }, [])
