@@ -9,7 +9,7 @@ const Addevents = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/toursist', data)
+        axios.post('https://stormy-coast-94004.herokuapp.com/toursist', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

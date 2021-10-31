@@ -50,11 +50,11 @@ const Login = () => {
     const createNewUser = (email, password) => {
         EmailSignIn(email, password)
         .then(result => {
-            const user = result.users
+            const user = result?.users
             console.log(user);
             setUsers(user)
             setUserName()
-            history.push(redirect_url)
+            history?.push(redirect_url)
         })
 
     }
@@ -62,10 +62,10 @@ const Login = () => {
     const LoginPRo = (email, password) => {
         processLogin(email, password)
         .then(result => {
-            const user = result.user
+            const user = result?.user
             console.log(user);
             setUsers(user)
-            history.push(redirect_url)
+            history?.push(redirect_url)
         })
 
     }

@@ -18,13 +18,19 @@ const Header = () => {
                             navbarScroll
                         >
                             <Link className='ms-5  text-decoration-none' to='/home'>Home</Link>
-                            <Link className='ms-5  text-decoration-none' to='/order'>My Order</Link>
+                            {
+                                users?.email && <Link className='ms-5  text-decoration-none' to='/order'>My Order</Link>
+                            }
+
+                            {
+                                users?.email && <Link className='ms-5  text-decoration-none' to='/travel'>All Orders</Link>
+                            }
 
 
-                            <Link className='ms-5  text-decoration-none' to='/travel'>All Orders</Link>
-
-
-                            <Link className='ms-5  text-decoration-none' to='/events'>Add Events</Link>
+                            {
+                                users?.email &&
+                                <Link className='ms-5  text-decoration-none' to='/events'>Add Events</Link>
+                            }
 
 
                         </Nav>
@@ -43,8 +49,8 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-           
-                                
+
+
         </div>
     );
 };
@@ -71,5 +77,5 @@ export default Header;
 //     messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDERID ,
 //     appId: process.env.REACT_APP_FIREBASE_APP_ID ,
 //   };
-          
+
 //   export default firebaseConfig
