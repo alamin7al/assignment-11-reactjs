@@ -36,12 +36,12 @@ const Travels = () => {
                     {
                         users.map(user => <div className="col-md-4">
                            
-                            <div className="card-body">
-                                <p className="card-title">name: {user.name}</p>
+                            <div className="card-body p-3 card-body shadow p-3 mb-5 bg-body rounded">
+                                <p className="card-title fs-3">Name: {user.name}</p>
                                 <p className="card-title">Email: {user.email}</p>
                                 <p className="card-title">Number: {user.phone}</p>
                                 <p className="card-title">City: {user.city}</p>
-                                <p className="card-title">ProductName: {user?.productName}</p>
+                                <p className="card-title">ProductName: {user?.productName.slice(0,30)}</p>
                                 <button onClick={() => handleDelet(user._id)} className='btn btn-outline-dark'>Delete</button>
                             </div>
                         </div>

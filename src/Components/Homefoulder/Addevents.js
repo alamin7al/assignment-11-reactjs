@@ -17,10 +17,14 @@ const Addevents = () => {
                 }
             })
     }
-
+//     <div className="mb-3 text-start">
+//     <label for="exampleInputEmail1" className="form-label">User Name</label>
+//     <input defaultValue={users.displayName} {...register("name")} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+// </div>
     return (
         <div className="add-service">
             <h2>Please Add a Service</h2>
+            
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
                 <input {...register("Category", { required: true, maxLength: 200 })} placeholder="Category" />

@@ -39,10 +39,11 @@ const Header = () => {
                             <Navbar.Text>
                                 {
                                     users?.email ? <button onClick={logOut} className='me-3 btn btn-dark'>Logout</button> :
-                                        <Link className='ms-2 fs-4 text-decoration-none' to='/login'>Login</Link>
+                                        <button className=' btn btn-outline-success btn-sm me-3'>
+                                            <Link className='text-lead ms-2 fs-4 text-decoration-none' to='/login'>Login</Link></button>
+
                                 }
                                 Signed in as: <a>{users?.displayName}</a>
-
                             </Navbar.Text>
                         </Navbar.Collapse>
 

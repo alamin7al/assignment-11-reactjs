@@ -1,53 +1,54 @@
 import React from 'react';
 
+import {
+Link
+  
+  } from "react-router-dom";
 const Footer = () => {
+    
     return (
-        <div className='mt-5 mb-5'>
+        <div className='design bg-dark  mb-2 border border-5 text-white'>
             <div className="container">
-                <div className="row">
-                    <div className="col-md-4">
-                        <h3 className='text-center'>About The Site</h3>
-                        <a className='d-block text-decoration-none' href="/general">Contact Us</a>
-                        <a className='d-block text-decoration-none' href="/help">Complaint</a>
-                        <a className='d-block text-decoration-none' href="/our service">Advertise</a>
-                        <a className='d-block text-decoration-none' href="/privacy">Sitemap</a>
+                <div className="container" id="icon-grid">
 
-                    </div>
-                    <div className="col-md-4">
-                        <h4 className='text-start'>Tour Package</h4>
-                        <div className='d-flex '>
-
-                            <div className='my-auto mx-1 mt-4'>
-                                <a className='d-block text-decoration-none' href="/general">Kerala</a>
-                                <a className='d-block text-decoration-none' href="/help">Help Center</a>
-                                <a className='d-block text-decoration-none' href="/our service">Koria</a>
-                                <a className='d-block text-decoration-none' href="/privacy">America</a>
-                            </div>
-                            <div className='my-auto mx-1 mt-4'>
-                                <a className='d-block text-decoration-none' href="/online"> South Koria </a>
-                                <a className='d-block text-decoration-none' href="/help"> India  </a>
-                                <a className='d-block text-decoration-none' href="/students"> Bangladesh</a>
-                                <a className='d-block text-decoration-none' href="/secter"> Nasha </a>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-1">
+                        <div className="col d-flex align-items-start">
+                            <div>
+                                <h4 className="fw-bold ">To travel Life</h4>
+                                <p className='text-start'>Below are many of my  life, and adventure. Feel free to pin and share these unique quotes and images on social media!</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
-                        <h4 className='text-end'> Popular Destination</h4>
-                        <div className='d-flex '>
-                            <div className='text-center mt-2 mx-3'>
-
-                                <h6>China </h6>
-                                <h6> Tourkey </h6>
-                                <h6> Afgamistan </h6>
-                            </div>
-                            <div className='text-center mt-2 mx-3'>
-                                <h6> Malawshia </h6>
-                                <h6> katar  </h6>
-                                <h6> Srilankha </h6>
-
+                        <div className="col d-flex align-items-start">
+                            <div>
+                                <h4 className="fw-bold ">Contact Us</h4>
+                                <Link >Email: alamin@gmial.com </Link><br />
+                                <Link> Number: 01703754409 </Link><br />
+                                <Link>Addres:Dhaka Bangladesh </Link>
+                              
                             </div>
                         </div>
+                        <div className="col d-flex align-items-start">
+                            <div>
+                                <h4 className="fw-bold">Travel country </h4>
+                                <Link > Bangladesh</Link><br />
+                                <Link>America </Link><br />
+                                <Link> Argentina </Link><br />
+                                <Link> India </Link>
+                               
+                            </div>
+                        </div>
+                        <div className="col d-flex align-items-start">
+                            <div>
+                                <h4 className="fw-bold ">Think 32</h4>
+                                <p className='text-start'> vacation, life, and adventure. Feel free to pin and share these</p>
+                            </div>
+
+                        </div>
+
+                       
                     </div>
+                    <p className='text-center text-white'>Copyright 1999-2021 by Refsnes Data. All Rights Reserved.</p>
+
                 </div>
             </div>
         </div>
