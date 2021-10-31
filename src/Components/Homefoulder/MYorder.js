@@ -6,45 +6,49 @@ import React, { useEffect, useState } from 'react';
 import Useauth from '../Firebase/Useauth';
 
 const MYorder = () => {
-   const  {users}=Useauth()
+    const { users } = Useauth()
     const [travel, settravels] = useState([])
-    const [isdeleted,setDeleted]=useState(null)
+    const [isdeleted, setDeleted] = useState(null)
 
     useEffect(() => {
         fetch(`https://stormy-coast-94004.herokuapp.com/traveldata`)
             .then(res => res.json())
             .then(data => settravels(data))
     }, [isdeleted])
-const myorders=travel?.filter(order=>order.email===users.email)
+    const myorders = travel?.filter(order => order.email === users.email)
 
 
-const handleDeleted = (id) => {
-    fetch(`https://stormy-coast-94004.herokuapp.com/singledatadelet/${id}`, {
-        method: 'DELETE',
-        headers: {
-            'content-type': 'application/json'
+    const handleDeleted = (id) => {
+        const procces = window.confirm('Are You Sure, You Want To Delet')
+        if (procces) {
+            fetch(`https://stormy-coast-94004.herokuapp.com/singledatadelet/${id}`, {
+                method: 'DELETE',
+                headers: {
+                    'content-type': 'application/json'
+                }
+            })
+                .then(res => res.json())
+                .then(result => {
+                    if (result.deletedCount) {
+                        setDeleted(true)
+                        alert('deleted successfull')
+                    } else {
+                        setDeleted(false)
+                    }
+
+                })
         }
-    })
-        .then(res => res.json())
-        .then(result => {
-            if (result.deletedCount) {
-                setDeleted(true)
-                alert('deleted successfull')
-            }else{
-                setDeleted(false)
-            }
 
-        })
-   
-}
-console.log(myorders);
+
+    }
+    console.log(myorders);
     return (
         <div>
             <div className="container ">
-             <h1 className='text-center fs-1 lead mb-1'>My Order List</h1>
+                <h1 className='text-center fs-1 lead mb-1'>My Order List</h1>
                 <div className="container">
                     <div className="row">
-                        
+
                         {
                             myorders.map(tr =>
                                 <div className="col-md-6 ">
